@@ -3,10 +3,10 @@
     <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image" />
     <div class="product-details">
       <h3 class="product-title">{{ product.name }}</h3>
-      <p class="product-price">₹{{ product.price }}</p>
+      <!-- <p class="product-price">₹{{ product.price }}</p> -->
       <ul class="product-specs">
         <li *ngIf="product.trackingType"><strong>Tracking:</strong> {{ product.trackingType }}</li>
-        <li *ngIf="product.batteryLife"><strong>Battery:</strong> {{ product.batteryLife }}</li>
+        <!-- <li *ngIf="product.batteryLife"><strong>Battery:</strong> {{ product.batteryLife }}</li> -->
         <li *ngIf="product.connectivity"><strong>Connectivity:</strong> {{ product.connectivity }}</li>
         <li *ngIf="product.warranty"><strong>Warranty:</strong> {{ product.warranty }}</li>
       </ul>
@@ -19,15 +19,32 @@
 
 
 <!-- pop model  -->
- <!-- Modal Popup -->
 <div class="modal-backdrop" *ngIf="selectedProduct">
   <div class="modal">
     <span class="close-btn" (click)="closeModal()">×</span>
     <div class="modal-content">
-      <img [src]="selectedProduct.imageUrl" class="modal-image" />
+
+      <!-- If PCB (with multiple images) -->
+      <div *ngIf="selectedProduct.imageUrls; else singleImage">
+        <div class="image-gallery">
+          <img
+            *ngFor="let img of selectedProduct.imageUrls"
+            [src]="img"
+            class="modal-thumb"
+            (click)="mainImage = img"
+            style="width: 100px; margin: 5px; cursor: pointer;"
+          />
+        </div>
+        <img [src]="mainImage" class="modal-image main-display" />
+      </div>
+
+      <!-- If not PCB (single image) -->
+      <ng-template #singleImage>
+        <img [src]="selectedProduct.imageUrl" class="modal-image" />
+      </ng-template>
+
       <div class="modal-info">
         <h2>{{ selectedProduct.name }}</h2>
-        <p class="price">₹{{ selectedProduct.price }}</p>
         <ul>
           <li><strong>Tracking:</strong> {{ selectedProduct.trackingType }}</li>
           <li><strong>Battery Life:</strong> {{ selectedProduct.batteryLife }}</li>
