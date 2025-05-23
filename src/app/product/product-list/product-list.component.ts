@@ -45,28 +45,6 @@ export class ProductListComponent implements OnInit {
   //   warranty: '1 Year',
   //   description: 'Smart AI-powered dashcam with 4G connectivity, real-time video streaming, GPS tracking, driver behavior analysis, and cloud storage support for fleet and personal vehicle safety.'
   // }
-  // ,
-  // {
-  //     name: 'STC-Series 4CH/8CH Mobile DVR',
-  //   // price: 12499,
-  //   imageUrl: 'assets/images/21.png',
-  //   trackingType: 'Live Video + GPS Tracking',
-  //   batteryLife: 'Vehicle Powered',
-  //   connectivity: '4G + GPS + Wi-Fi + Web Portal',
-  //   warranty: '1 Year',
-  //   description: 'High-performance mobile DVR supporting 4 to 8 camera channels with 4G live streaming, GPS tracking, remote monitoring, and rugged design ideal for buses, trucks, and fleet management.'
-  // }
-  // ,
-  // {
-  //     name: 'STC-Series 4G AI 1+2DMS ADAS Dashcam',
-  //   // price: 9999,
-  //   imageUrl: 'assets/images/16.png',
-  //   trackingType: 'Live Video + GPS Tracking',
-  //   batteryLife: 'Vehicle Powered',
-  //   connectivity: '4G + Wi-Fi + GPS + App + Web Portal',
-  //   warranty: '1 Year',
-  //   description: 'Advanced N6-Series AI dashcam with real-time 4G video streaming, GPS tracking, driver monitoring system (DMS), ADAS features, and cloud integration for enhanced vehicle safety and fleet management.'
-  // }
   ,
   {
       name: 'STC Series 4CH 4G AI HD Dashcam',
@@ -145,7 +123,7 @@ export class ProductListComponent implements OnInit {
     description: 'Compact magnetic GPS tracker with strong magnet mount for easy installation on vehicles or assets. Provides real-time tracking, geo-fencing, and alert notifications via mobile app with reliable 4G connectivity.'
   },
    {
-      name: 'Getropy AIS 140 GPS Tracker',
+      name: 'Gtropy AIS 140 GPS Tracker',
     price: 4999,
     imageUrl: 'assets/images/getropy.png',
     trackingType: 'Live GPS Tracking + Vehicle Diagnostics',
@@ -368,7 +346,7 @@ export class ProductListComponent implements OnInit {
   batteryLife: 'N/A',
   connectivity: 'N/A',
   warranty: 'As per project agreement',
-  description: 'Professional PCB (Printed Circuit Board) manufacturing job work services offering precision fabrication, assembly, and testing. Suitable for single-layer, double-layer, and multi-layer PCBs with support for prototypes to full-scale production. Services include component sourcing, SMT/DIP assembly, functional testing, and quality assurance. Ideal for industrial, automotive, IoT, and consumer electronics applications. Tailored solutions to meet custom specifications with quick turnaround and high reliability.'
+  description: 'Professional PCB (Printed Circuit Board) manufacturing job work services offering precision fabrication, assembly, and testing. Suitable for single-layer, double-layer, and multi-layer PCBs with support for prototypes to full-scale production. Services include component sourcing, SMT/DIP assembly, functional testing, and quality assurance. Ideal for industrial, automotive, IoT, and consumer electronics applications.'
    }
   
 ];
