@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsSectionComponent implements OnInit {
 
+
+  mailOne: string = '';
+  mailTwo: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
