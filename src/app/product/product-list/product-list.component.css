@@ -179,6 +179,8 @@
 
   .modal{
         width: 80%;
+        max-height: 80vh; /* limit height */
+    overflow-y: auto; /* enable vertical scroll */
     }
     
   .modal-content {

@@ -143,28 +143,29 @@ export class ProductListComponent implements OnInit {
   //   warranty: '1 Year',
   //   description: 'Reliable GPS tracker with live location tracking,, geo-fence alerts, and 3 months of location history. Ideal for kids’ safety, daily location monitoring, and outdoor activities like camping. Supports the 365GPS app for seamless control and notifications.'
   // }
-   ,
-   {
-      name: 'STC Magnetic GPS Tracker',
-    // price: 2599,
-    imageUrl: 'assets/images/FatcaGps.png',
-    trackingType: 'Live Location Tracking + Voice Monitor',
-    batteryLife: '7–10 Days',
-    connectivity: 'Cellular + Track App',
-    warranty: '1 Year',
-    description: 'Compact GPS tracker with strong magnetic base, live tracking, voice listen-in, geofencing, and route history playback. Designed for discreet placement with long battery life and full control via the  Track mobile application.'
-  }
   //  ,
   //  {
-  //   name: 'Smart GPS Tracker ',
-  //   // price: 2699,
-  //   imageUrl: 'assets/images/eLock.png',
-  //   trackingType: 'Live GPS Tracking + 2-Way Calling',
-  //   batteryLife: '3–5 Days',
-  //   connectivity: 'GPS + 2G + 365GPS App',
+  //     name: 'STC Magnetic GPS Tracker',
+  //   // price: 2599,
+  //   imageUrl: 'assets/images/FatcaGps.png',
+  //   trackingType: 'Live Location Tracking + Voice Monitor',
+  //   batteryLife: '7–10 Days',
+  //   connectivity: 'Cellular + Track App',
   //   warranty: '1 Year',
-  //   description: 'Reliable GPS tracker with live location tracking, 2-way voice calling, geo-fence alerts, and 2 months of location history. Ideal for kids’ safety, daily location monitoring, and outdoor activities like camping. Supports the 365GPS app for seamless control and notifications.'
+  //   description: 'Compact GPS tracker with strong magnetic base, live tracking, voice listen-in, geofencing, and route history playback. Designed for discreet placement with long battery life and full control via the  Track mobile application.'
   // }
+   ,
+   {
+    name: 'STC E-LOCK GPS Tracker ',
+    // price: 2699,
+    imageUrl: 'assets/images/eLock.png',
+    trackingType: 'Live GPS Tracking ',
+    // batteryLife: '3–5 Days',
+    Dimensions: '27.5 cm (height) × 11.5 cm (width) × 4.5 cm (depth)',
+    connectivity: 'GPS + 2G + 365GPS App',
+    warranty: '1 Year',
+    description: 'A robust, intelligent lock-style GPS tracker with live location tracking, geo-fence alerts, and 2 months of location history. Designed for high-security applications and asset protection. Compatible with the 365GPS app for seamless real-time monitoring and alerts. Ideal for logistics, outdoor gear security, and remote tracking'
+  }
   //  ,
   //  {
   //   name: 'Mini GPS Locator',
