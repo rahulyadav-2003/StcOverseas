@@ -1,0 +1,44 @@
+<div class="product-grid">
+  <div class="product-card" *ngFor="let product of products">
+    <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image" />
+    <div class="product-details">
+      <h3 class="product-title">{{ product.name }}</h3>
+      <p class="product-price">₹{{ product.price }}</p>
+      <ul class="product-specs">
+        <li *ngIf="product.trackingType"><strong>Tracking:</strong> {{ product.trackingType }}</li>
+        <li *ngIf="product.batteryLife"><strong>Battery:</strong> {{ product.batteryLife }}</li>
+        <li *ngIf="product.connectivity"><strong>Connectivity:</strong> {{ product.connectivity }}</li>
+        <li *ngIf="product.warranty"><strong>Warranty:</strong> {{ product.warranty }}</li>
+      </ul>
+      <button class="add-to-cart-btn" (click)="viewDetails(product)">View All Details</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- pop model  -->
+ <!-- Modal Popup -->
+<div class="modal-backdrop" *ngIf="selectedProduct">
+  <div class="modal">
+    <span class="close-btn" (click)="closeModal()">×</span>
+    <div class="modal-content">
+      <img [src]="selectedProduct.imageUrl" class="modal-image" />
+      <div class="modal-info">
+        <h2>{{ selectedProduct.name }}</h2>
+        <p class="price">₹{{ selectedProduct.price }}</p>
+        <ul>
+          <li><strong>Tracking:</strong> {{ selectedProduct.trackingType }}</li>
+          <li><strong>Battery Life:</strong> {{ selectedProduct.batteryLife }}</li>
+          <li><strong>Connectivity:</strong> {{ selectedProduct.connectivity }}</li>
+          <li><strong>Warranty:</strong> {{ selectedProduct.warranty }}</li>
+          <li><strong>Description:</strong> {{ selectedProduct.description }}</li>
+        </ul>
+        <button class="buy-now-btn" (click)="BuyNow()">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
