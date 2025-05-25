@@ -285,7 +285,7 @@ export class ProductListComponent implements OnInit {
   batteryLife: '4200mAh / Dual 2500mAh / 2850mAh (Model Dependent)',
   connectivity: '3G/4G + 2.4G WiFi (Model Dependent)',
   warranty: '1 Year',
-  description: 'High-performance body-worn cameras ideal for law enforcement and field security. Supports full HD video recording, two-way audio intercom, GPS logging, and encrypted storage. Available models (KJ03-A, KJ11-A, KJ21) feature up to 34MP photos, IR-CUT night vision, multiple recording buttons, and PTT cluster intercom. Storage options include internal memory and TF card support. Compatible with CMSV9/CMSV6 platforms (model dependent).'
+  description: 'High-performance body-worn cameras ideal for law enforcement and field security. Supports full HD video recording, two-way audio intercom, GPS logging, and encrypted storage. Available models (STCJ03-A, STC11-A, STCJ21) feature up to 34MP photos, IR-CUT night vision, multiple recording buttons, and PTT cluster intercom. Storage options include internal memory and TF card support. Compatible with CMSV9/CMSV6 platforms (model dependent).'
    }
        ,
    {
@@ -348,6 +348,23 @@ export class ProductListComponent implements OnInit {
   connectivity: 'N/A',
   warranty: 'As per project agreement',
   description: 'Professional PCB (Printed Circuit Board) manufacturing job work services offering precision fabrication, assembly, and testing. Suitable for single-layer, double-layer, and multi-layer PCBs with support for prototypes to full-scale production. Services include component sourcing, SMT/DIP assembly, functional testing, and quality assurance. Ideal for industrial, automotive, IoT, and consumer electronics applications.'
+   }
+
+     ,
+   {
+      name: 'STC Smart APC, ADAS, DMS & BSD Solution',
+  imageUrl: 'assets/images/APC.png',
+  // price: 17499,
+  imageUrls: [
+    'assets/images/APC.png',
+    'assets/images/APCinner2.png',
+    'assets/images/APCinner3.png'
+  ],
+  trackingType: 'Real-Time Passenger Counting + Driver Behavior Monitoring + Safety Alerts',
+  batteryLife: 'Powered by Vehicle',
+  connectivity: '4G Cellular + MDVR + CMS Integration',
+  warranty: '1 Year',
+  description: 'Advanced AI-based fleet safety and monitoring system by STC, integrating Automatic Passenger Counting (APC), Advanced Driving Assistance System (ADAS), Driver Monitoring System (DMS), Blind Spot Detection (BSD), and Face Recognition (FR). Offers accurate passenger statistics with 95%+ accuracy, forward collision and lane departure warnings, driver fatigue/distraction detection, and blind spot alerts for enhanced road safety. The system supports real-time data streaming to CMS, MDVR display, and generates statistical reports for actionable insights. Designed for public transit, school buses, and commercial fleets to ensure safety, compliance, and efficiency.'
    }
   
 ];
