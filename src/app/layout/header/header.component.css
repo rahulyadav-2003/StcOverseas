@@ -1,19 +1,13 @@
-/* header */
-
-/* Logo Section */
-.logo {
-  display: block;
-  float: left;
-  padding: 10px 20px;
+/* Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.logo img {
-  height: 40px;
-  width: auto;
-  display: block;
-}
-
-/* Header Wrapper */
+/* Header */
 .header {
   background-color: #fff;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
@@ -24,129 +18,130 @@
   left: 0;
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.logo {
+  display: block;
+  padding: 10px 0;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
 /* Navigation List */
-.header ul {
-  margin: 0;
-  padding: 0;
+.menu {
   list-style: none;
-  overflow: hidden;
   background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
 }
 
 /* Navigation Items */
-.header li a {
+.menu li a {
   display: block;
-  padding: 20px;
+  padding: 16px 20px;
   text-decoration: none;
   color: black;
   font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
+.menu li a:hover {
   background-color: #f4f4f4;
 }
 
-/* Re-define logo for nav use */
-.header .logo {
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: black;
-}
-
-/* Hamburger menu container */
-.header .menu {
-  clear: both;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-/* Menu icon (hamburger) */
-.header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-
-.header .menu-icon .navicon {
-  background: #333;
-  height: 2px;
-  position: relative;
-  transition: background 0.2s ease-out;
-  width: 18px;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  content: '';
-  background: #333;
-  display: block;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  transition: all 0.2s ease-out;
-}
-
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
-
-/* Menu button logic (hidden checkbox) */
-.header .menu-btn {
+/* Hamburger Icon */
+.menu-btn {
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+.menu-icon {
+  cursor: pointer;
+  padding: 28px 20px;
+  display: inline-block;
+  user-select: none;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.navicon {
+  background: #333;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  display: block;
+}
+
+.navicon::before,
+.navicon::after {
+  content: '';
+  background: #333;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+
+.navicon::before {
+  top: 6px;
+}
+
+.navicon::after {
+  top: -6px;
+}
+
+/* Toggle Logic */
+.menu-btn:checked ~ .menu {
+  max-height: 500px;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.menu-btn:checked ~ .menu-icon .navicon::before {
   transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
-/* Responsive: Desktop View (min-width: 768px / 48em) */
-@media (min-width: 48em) {
-  .header li {
+.menu-btn:checked ~ .menu-icon .navicon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/* Responsive: Desktop */
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    max-height: none !important;
+    width: auto;
+  }
+
+  .menu li {
     float: left;
   }
 
-  .header li a {
+  .menu li a {
     padding: 22px 14px;
   }
 
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-
-  .header .menu-icon {
+  .menu-icon {
     display: none;
-  }
-  .header .menu-btn:checked ~ .menu {
-    max-height: 300px;
   }
 }

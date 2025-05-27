@@ -16,8 +16,6 @@
 </div>
 
 
-
-
 <!-- pop model  -->
 <div class="modal-backdrop" *ngIf="selectedProduct">
   <div class="modal">
@@ -27,13 +25,8 @@
       <!-- If PCB (with multiple images) -->
       <div *ngIf="selectedProduct.imageUrls; else singleImage">
         <div class="image-gallery">
-          <img
-            *ngFor="let img of selectedProduct.imageUrls"
-            [src]="img"
-            class="modal-thumb"
-            (click)="mainImage = img"
-            style="width: 100px; margin: 5px; cursor: pointer;"
-          />
+          <img *ngFor="let img of selectedProduct.imageUrls" [src]="img" class="modal-thumb" (click)="mainImage = img"
+            style="width: 100px; margin: 5px; cursor: pointer;" />
         </div>
         <img [src]="mainImage" class="modal-image main-display" />
       </div>

@@ -9,6 +9,9 @@ export class FooterComponent implements OnInit {
 
   constructor() { }
 
+    mailOne: string = 'sales@stcoverseas.co.in';
+    mailTwo: string = 'info@stcoverseas.co.in';
+
   ngOnInit(): void {
   }
 

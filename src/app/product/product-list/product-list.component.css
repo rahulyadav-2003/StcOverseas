@@ -73,11 +73,6 @@
   background-color: #0056b3;
 }
 
-
-
-
-
-
 /* popup style  */
 .modal-backdrop {
   position: fixed;
@@ -116,7 +111,7 @@
 }
 
 .modal-image {
-  width: 300px;
+  width: 470px;
   height: auto;
   object-fit: contain;
 }

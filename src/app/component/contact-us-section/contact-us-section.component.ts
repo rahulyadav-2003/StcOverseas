@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ContactUsSectionComponent implements OnInit {
 
 
-  mailOne: string = '';
-  mailTwo: string = '';
+  mailOne: string = 'sales@stcoverseas.co.in';
+  mailTwo: string = 'info@stcoverseas.co.in';
 
   constructor() { }
 

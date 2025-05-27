@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
@@ -281,6 +280,12 @@ export class ProductListComponent implements OnInit {
     name: 'Multi-function Body-Worn Camera (STC03-A / STC11-A / STC21)',
   // price: 7499,
   imageUrl: 'assets/images/52.jpg',
+   imageUrls: [
+      'assets/images/52.jpg',
+      'assets/images/bodyworncarmera.png',
+      'assets/images/bodywarncamera2.png',
+      'assets/images/bodywarncamera3.png',
+    ],
   trackingType: 'Video Recording + GPS Logging + Intercom Support',
   batteryLife: '4200mAh / Dual 2500mAh / 2850mAh (Model Dependent)',
   connectivity: '3G/4G + 2.4G WiFi (Model Dependent)',
@@ -292,6 +297,10 @@ export class ProductListComponent implements OnInit {
       name: 'Intelligent Logistics Fleet Solution',
     // price: 12499,
     imageUrl: 'assets/images/publicTransport.png',
+     imageUrls: [
+      'assets/images/publicTransport.png',
+      'assets/images/publicTransport2.png',
+    ],
     trackingType: 'Real-Time GPS Tracking + Video Surveillance + Load Monitoring',
     batteryLife: 'Powered by Vehicle (No Charging Required)',
     connectivity: '4G Cellular + 365GPS / Track App + Wired Accessories',
@@ -302,7 +311,11 @@ export class ProductListComponent implements OnInit {
    {
      name: 'Smart Public Transit Surveillance & Safety Solution',
   // price: 17499,
-  imageUrl: 'assets/images/logicstics.png',
+  imageUrl:'assets/images/logicstics.png',
+  imageUrls: [
+      'assets/images/logicstics.png',
+      'assets/images/logicstics2.png',
+    ],
   trackingType: 'Real-Time GPS Tracking + Passenger Counting + Driver Monitoring',
   batteryLife: 'Powered by Vehicle (No Charging Required)',
   connectivity: '4G Cellular + Wired Sensors + 365GPS / Track App',
@@ -314,6 +327,10 @@ export class ProductListComponent implements OnInit {
        name: 'Smart School Bus Surveillance & Safety System',
   // price: 17499,
   imageUrl: 'assets/images/schoolBus.png',
+   imageUrls: [
+      'assets/images/schoolBus.png',
+      'assets/images/busfeacture.png',
+    ],
   trackingType: 'Real-Time GPS Tracking + Full Vehicle Surveillance + Driver Behavior Monitoring',
   batteryLife: 'Powered by Vehicle (No Charging Required)',
   connectivity: '4G Cellular + Wired Sensors + 365GPS / Track App',
