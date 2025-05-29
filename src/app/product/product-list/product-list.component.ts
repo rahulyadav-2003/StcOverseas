@@ -369,19 +369,19 @@ export class ProductListComponent implements OnInit {
 
      ,
    {
-      name: 'STC Smart APC, ADAS, DMS & BSD Solution',
-  imageUrl: 'assets/images/APC.png',
-  // price: 17499,
-  imageUrls: [
-    'assets/images/APC.png',
-    'assets/images/APCinner2.png',
-    'assets/images/APCinner3.png'
-  ],
-  trackingType: 'Real-Time Passenger Counting + Driver Behavior Monitoring + Safety Alerts',
-  batteryLife: 'Powered by Vehicle',
-  connectivity: '4G Cellular + MDVR + CMS Integration',
-  warranty: '1 Year',
-  description: 'Advanced AI-based fleet safety and monitoring system by STC, integrating Automatic Passenger Counting (APC), Advanced Driving Assistance System (ADAS), Driver Monitoring System (DMS), Blind Spot Detection (BSD), and Face Recognition (FR). Offers accurate passenger statistics with 95%+ accuracy, forward collision and lane departure warnings, driver fatigue/distraction detection, and blind spot alerts for enhanced road safety. The system supports real-time data streaming to CMS, MDVR display, and generates statistical reports for actionable insights. Designed for public transit, school buses, and commercial fleets to ensure safety, compliance, and efficiency.'
+        name: 'STC Smart APC, ADAS, DMS & BSD Solution',
+    imageUrl: 'assets/images/APC.png',
+    // price: 17499,
+    imageUrls: [
+      'assets/images/APC.png',
+      'assets/images/APCinner2.png',
+      'assets/images/APCinner3.png'
+    ],
+    trackingType: 'Real-Time Passenger Counting + Driver Behavior Monitoring + Safety Alerts',
+    batteryLife: 'Powered by Vehicle',
+    connectivity: '4G Cellular + MDVR + CMS Integration',
+    warranty: '1 Year',
+    description: 'Advanced AI-based fleet safety and monitoring system by STC, integrating Automatic Passenger Counting (APC), Advanced Driving Assistance System (ADAS), Driver Monitoring System (DMS), Blind Spot Detection (BSD), and Face Recognition (FR). Offers accurate passenger statistics with 95%+ accuracy, forward collision and lane departure warnings, driver fatigue/distraction detection, and blind spot alerts for enhanced road safety. The system supports real-time data streaming to CMS, MDVR display, and generates statistical reports for actionable insights. Designed for public transit, school buses, and commercial fleets to ensure safety, compliance, and efficiency.'
    }
   
 ];
