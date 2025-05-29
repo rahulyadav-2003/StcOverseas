@@ -204,7 +204,7 @@
 
 
 /* Responsive adjustments */
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
 
     .modal{
         width: 70%;
@@ -225,4 +225,4 @@
   .buy-now-btn {
     width: 100%;
   }
-} */
+}
